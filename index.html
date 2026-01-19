@@ -3,88 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gruppo Moderna - Under Construction</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-        }
-        
-        .container {
-            text-align: center;
-            padding: 2rem;
-            max-width: 600px;
-        }
-        
-        .icon {
-            font-size: 5rem;
-            margin-bottom: 1.5rem;
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-        
-        .loader {
-            margin: 2rem auto;
-            width: 50px;
-            height: 50px;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top-color: #fff;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-        
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            p {
-                font-size: 1rem;
-            }
-            
-            .icon {
-                font-size: 4rem;
-            }
-        }
-    </style>
+    <title>Gruppo Moderna - In costruzione</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.querySelector('.scroll-cta').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#contact').scrollIntoView({
+                behavior: 'smooth',
+            });
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
-        <div class="icon">🚧</div>
-        <h1>Gruppo Moderna</h1>
-        <p>Il nostro sito è attualmente in costruzione.<br>Torneremo presto con qualcosa di straordinario!</p>
-        <div class="loader"></div>
-    </div>
+    <main>
+        <section class="hero">
+            <h1>Gruppo Moderna</h1>
+            <p>Sito in costruzione, torneremo presto online.</p>
+            <a href="#contact" class="scroll-cta">↓ Contattaci ↓</a>
+        </section>
+        <section class="contact-info" id="contact">
+            <ul>
+                <li><strong>Partita IVA:</strong> 02725650390</li>
+                <li><strong>Telefono:</strong> <a href="tel:+393758870695">+39 375 887 0695</a></li>
+                <li><strong>Email:</strong> <a href="mailto:gruppomodernasrl@gmail.com">gruppomodernasrl@gmail.com</a></li>
+                <li><strong>Indirizzo:</strong> Via Carlo Levi 15, 48121 Ravenna (RA)</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>

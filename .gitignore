@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Node/Yarn/NPM
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+/dist/
+/build/
+/.cache/
+/.parcel-cache/
+
+# Env files
+.env
+.env.*
+
+# Editors
+.vscode/
+.idea/
